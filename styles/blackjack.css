@@ -1,0 +1,71 @@
+#board{
+    background-color: #007251;
+}
+.player-cards,.dealer-cards{
+    background-color: silver;
+    border-radius: 10px;
+}
+/*DEALER BOARD*/
+.dealer-cards{
+    display: inline-block;
+    width: 20%;
+    max-width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 220px;
+    margin-top:40px;
+    margin-left:18px;
+    padding: 0;
+
+}
+.deck-cards{
+    display: inline-block;
+    height: 280px;
+    width: 25%;
+    max-width: 100%;
+    margin-top:10px;
+    margin-left:50px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('../img/card-back1.png');
+}
+
+/*#dealer-card-1{*/
+    /*background-image: url('../img/2_of_clubs.png');*/
+/*}*/
+/*#dealer-card-2{*/
+    /*background-image: url('../img/3_of_diamonds.png');*/
+/*}*/
+/*#dealer-card-3{*/
+    /*background-image: url('../img/4_of_hearts.png');*/
+/*}*/
+
+/*PLAYER BOARD*/
+#player-deck{
+    position: relative;
+    margin-top:50px;
+}
+.player-cards{
+    display: inline-block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 22%;
+    height: 290px;
+    margin-left: 20px;
+    margin-top:10px;
+    cursor: pointer;
+}
+#player-card-1{
+    background-color: silver;
+    border-radius: 10px;
+}
+#player-card-2{
+
+}
+#player-button{
+    display: inline-block;
+}
+#hit-button{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}

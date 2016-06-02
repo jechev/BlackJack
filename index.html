@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlackJack Game</title>
+    <link rel="stylesheet" href="libs/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/blackjack.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Blackjack</h1>
+        <div class="row" id="board">
+            <div id="dealer-board">
+                <div class="dealer-cards col-xs-12 col-sm-6 col-md-8" id="dealer-card-1"></div>
+                <div class="dealer-cards col-xs-12 col-sm-6 col-md-8" id="dealer-card-2"></div>
+                <div class="dealer-cards col-xs-12 col-sm-6 col-md-8" id="dealer-card-3"></div>
+                <div class="deck-cards"></div>
+            </div>
+            <div class="row text-center" id="player-deck">
+                <div class="player-cards" id="player-card-1"></div>
+                <div class="player-cards" id="player-card-2"></div>
+                <div id="player-button">
+                    <button type="button" class="btn btn-success" id="hit-button">Hit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script src="libs/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <script src="scripts/showCards.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/cards-data.js"></script>
+    <script src="scripts/cardsElements.js"></script>
+    <script src="scripts/changeFirstPlayerCard.js"></script>
+    <script src="scripts/changeSecondPlayerCard.js"></script>
+    <script src="scripts/changeAllPlayerCards.js"></script>
+</body>
+</html>
