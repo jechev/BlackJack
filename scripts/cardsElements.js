@@ -1,6 +1,7 @@
 var app=app || {};
 (function (blackJack) {
     var deck,
+        deckPlace,
         dealerFirstCard,
         dealerSecondCard,
         dealerThirdCard,
@@ -12,7 +13,9 @@ var app=app || {};
         newDealerThirdCard,
         newPlayerFirstCard,
         newPlayerSecondCard;
+    
     deck=blackJack.deck;
+    deckPlace=$('#deck-place');
     dealerFirstCard=$('#dealer-card-1');
     dealerSecondCard=$('#dealer-card-2');
     dealerThirdCard=$('#dealer-card-3');
@@ -26,6 +29,7 @@ var app=app || {};
     newPlayerFirstCard=deck[Math.floor(Math.random() * (deck.length-1))];
     newPlayerSecondCard=deck[Math.floor(Math.random() * (deck.length-1))];
 
+    blackJack.deckPlace=deckPlace;
     blackJack.dealerFirstCard=dealerFirstCard;
     blackJack.dealerSecondCard=dealerSecondCard;
     blackJack.dealerThirdCard=dealerThirdCard;
