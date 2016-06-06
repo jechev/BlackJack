@@ -9,6 +9,7 @@ var app=app || {};
             blackJack.moveSecondPlayerCard();
         });
     }
+    
     blackJack.changeSecondPlayerCard=function () {
         return new changeSecondPlayerCard();
     }

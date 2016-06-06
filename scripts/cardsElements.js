@@ -1,4 +1,5 @@
 var app=app || {};
+
 (function (blackJack) {
     var deck,
         deckPlace,

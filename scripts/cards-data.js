@@ -1,6 +1,6 @@
 //arrays with cards data
-
 var app = app || {};
+
 (function (blackJack) {
     var deckWithAllCards=[],
         allCardsOfClubs,
