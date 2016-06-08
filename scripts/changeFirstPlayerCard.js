@@ -4,9 +4,11 @@ var app=app || {};
 (function (blackJack) {
     function changeFirstPlayerCard() {
         blackJack.playerFirstCard.click(function (event) {
-            blackJack.newPlayerFirstCard=blackJack.deck[Math.floor(Math.random() * (blackJack.deck.length-1))];
-            blackJack.playerFirstCard.empty();
-            blackJack.moveFirstPlayerCard();
+            if(blackJack.playerFirstCard.find('.dynamic-dealer').length>0 && blackJack.playerSecondCard.find('.dynamic-dealer').length>0){
+                blackJack.newPlayerFirstCard=blackJack.deck[Math.floor(Math.random() * (blackJack.deck.length-1))];
+                blackJack.playerFirstCard.empty();
+                blackJack.moveFirstPlayerCard();
+            }
         });
     }
     

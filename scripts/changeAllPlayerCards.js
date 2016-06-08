@@ -4,6 +4,7 @@ var app=app || {};
 (function (blackJack) {
     function changeAllPlayerCards() {
         blackJack.hitButton.click(function (event) {
+            if(blackJack.playerFirstCard.find('.dynamic-dealer').length>0 && blackJack.playerSecondCard.find('.dynamic-dealer').length>0){
             blackJack.newPlayerFirstCard=blackJack.deck[Math.floor(Math.random() * (blackJack.deck.length-1))];
             blackJack.newPlayerSecondCard=blackJack.deck[Math.floor(Math.random() * (blackJack.deck.length-1))];
 
@@ -19,9 +20,9 @@ var app=app || {};
             setTimeout(function () {
                 blackJack.hitButton.prop('disabled',false);
             },5000);
+            }
         });
     }
-    
     blackJack.changeAllPlayerCards=function () {
         return new changeAllPlayerCards();
     }

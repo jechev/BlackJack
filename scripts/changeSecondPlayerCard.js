@@ -4,9 +4,12 @@ var app=app || {};
 (function (blackJack) {
     function changeSecondPlayerCard() {
         blackJack.playerSecondCard.click(function (event) {
-            blackJack.newPlayerSecondCard=blackJack.deck[Math.floor(Math.random() * (blackJack.deck.length-1))];
-            blackJack.playerSecondCard.empty();
-            blackJack.moveSecondPlayerCard();
+            if(blackJack.playerFirstCard.find('.dynamic-dealer').length>0 && blackJack.playerSecondCard.find('.dynamic-dealer').length>0){
+                blackJack.newPlayerSecondCard=blackJack.deck[Math.floor(Math.random() * (blackJack.deck.length-1))];
+                blackJack.playerSecondCard.empty();
+                blackJack.moveSecondPlayerCard();
+            }
+
         });
     }
     
